@@ -1,0 +1,39 @@
+{
+    "name": "zheltikov/simple-container",
+    "description": "A simple implementation of PSR-11",
+    "type": "library",
+    "keywords": [
+        "psr-11",
+        "dependency",
+        "injection",
+        "di",
+        "container"
+    ],
+    "homepage": "https://github.com/zheltikov/php-simple-container",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Zheltikov",
+            "homepage": "https://github.com/zheltikov"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "psr/container": "^2.0"
+    },
+    "provide": {
+        "psr/container-implementation": "^2.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Zheltikov\\SimpleContainer\\": "src/"
+        }
+    }
+}
